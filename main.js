@@ -122,14 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (videoPlaceholder && videoWrapper) {
         videoPlaceholder.addEventListener('click', () => {
-            // Sostituisce il placeholder con un iframe di YouTube di prova (Blender Open Movie - Spring)
-            // Flavio potrà modificare questo URL con quello del suo Showreel reale
+            // Sostituisce il placeholder con il video Vimeo dello Showreel di Flavio Agresta
             videoWrapper.innerHTML = `
                 <iframe 
-                    src="https://www.youtube.com/embed/5F_UXyV4uY4?autoplay=1" 
-                    title="Flavio Agresta - Showreel Demo" 
+                    src="https://player.vimeo.com/video/1206500437?autoplay=1" 
+                    title="Flavio Agresta - Showreel" 
                     frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             `;
