@@ -834,6 +834,42 @@ ul {
 .dot-3 { background-color: #8b5cf6; }
 .dot-4 { background-color: #fef08a; }
 
+.hikibou-video-side {
+    width: 100%;
+    min-width: 0;
+}
+
+.hikibou-video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #0f172a;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow:
+        0 20px 40px -10px rgba(0, 0, 0, 0.7),
+        0 0 30px 2px rgba(139, 92, 246, 0.15),
+        0 0 60px -15px rgba(99, 102, 241, 0.1);
+}
+
+.hikibou-video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.hikibou-video-caption {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: var(--text-light-muted);
+    letter-spacing: 0.02em;
+}
+
 /* ==========================================================================
    ABOUT SECTION
    ========================================================================== */

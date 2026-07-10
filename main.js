@@ -117,8 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
        6. INTERACTION PLACEHOLDER SHOWREEL (Simulatore Video)
        ========================================================================== */
-    const videoPlaceholder = document.querySelector('.video-placeholder');
-    const videoWrapper = document.querySelector('.video-wrapper');
+    const showreelSection = document.querySelector('#showreel');
+    const videoWrapper = showreelSection?.querySelector('.video-wrapper');
+    const videoPlaceholder = showreelSection?.querySelector('.video-placeholder');
 
     if (videoPlaceholder && videoWrapper) {
         videoPlaceholder.addEventListener('click', () => {
